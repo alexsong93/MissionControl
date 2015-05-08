@@ -24,7 +24,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	public DatabaseHandler(Context context) {
 		super(context, DATABASE_NAME, null, 1);
 	}
-
+	
 	@Override
 	public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_CONTACTS + "("
@@ -55,7 +55,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	 
 	    // Inserting Row
 	    db.insert(TABLE_CONTACTS, null, values);
-	    db.close(); // Closing database connection
 	}
 	 
 	// Getting single contact
@@ -130,7 +129,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		SQLiteDatabase db = this.getWritableDatabase();
 	    db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
 	            new String[] { String.valueOf(contact.getID()) });
-	    db.close();
 	}
+	
+	
 
 }

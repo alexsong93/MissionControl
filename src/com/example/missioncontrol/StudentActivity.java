@@ -2,6 +2,7 @@ package com.example.missioncontrol;
 
 import java.util.List;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.SmsManager;
@@ -20,10 +21,31 @@ public class StudentActivity extends ActionBarActivity {
 	String section;
 	String roomNumber;
 	
+	DatabaseHandler db = new DatabaseHandler(this);
+	@Override
+	protected void onResume() {
+		super.onResume();
+		db = new DatabaseHandler(this);
+	}
+	@Override
+	protected void onPause() {
+		super.onPause();
+		if(db != null) {
+			db.close();
+		}
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_student);
+
+//		List<RAContact> contacts = db.getAllContacts();
+//		Log.d("Reading all contacts...", "");
+//		for (RAContact cn : contacts) {
+//            String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,Phone: " + cn.getPhoneNumber();
+//                // Writing Contacts to log
+//	        Log.d("Name: ", log);
+//	    }
 		
 		Button btnSendSMS = (Button) findViewById(R.id.helpme);
 				
