@@ -16,5 +16,8 @@
         <item>Section O</item>
         <item>Section P</item>
     </string-array>
+        <string name="name">Name</string>
+        <string name="email">EMail :</string>
+        <string name="pw">PW     :</string>
 
 </resources>
