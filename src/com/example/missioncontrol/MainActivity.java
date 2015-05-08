@@ -41,4 +41,9 @@ public class MainActivity extends ActionBarActivity {
 		Intent intent = new Intent(this, StudentActivity.class);
 		startActivity(intent);
 	}
+	
+	public void openLoginPage(View view) {
+		Intent intent = new Intent(this, RALoginActivity.class);
+		startActivity(intent);
+	}
 }
