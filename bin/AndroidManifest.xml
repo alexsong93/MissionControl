@@ -26,7 +26,10 @@
         <activity android:name="RAregisterActivity"></activity>
         <activity android:name="StudentActivity"></activity>
         <activity android:name="RALoginActivity"></activity>
-        <activity android:name="RAregisterActivity"></activity>
+        <activity android:name="RABoardActivity"></activity>
+        <activity android:name="RACalendarActivity"></activity>
+        <activity android:name="RANewsfeedActivity"></activity>
+        <activity android:name="RAContactsActivity"></activity>
     </application>
 
 </manifest>
