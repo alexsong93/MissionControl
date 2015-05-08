@@ -47,9 +47,5 @@ public class MainActivity extends ActionBarActivity {
 		startActivity(intent);
 	}
 	
-	public void openRABoard(View view) {
-		Intent intent = new Intent(this, RABoardActivity.class);
-		startActivity(intent);
-	}
 	
 }
