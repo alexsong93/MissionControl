@@ -23,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="RAregisterActivity"></activity>
         <activity android:name="StudentActivity"></activity>
         <activity android:name="RALoginActivity"></activity>
         <activity android:name="RAregisterActivity"></activity>
