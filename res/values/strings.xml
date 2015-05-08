@@ -9,5 +9,8 @@
     <string-array name="location_arrays">
         <item>Kilgo</item>
     </string-array>
+        <string name="name">Name</string>
+        <string name="email">Email</string>
+        <string name="pw">"PW        "</string>
 
 </resources>
