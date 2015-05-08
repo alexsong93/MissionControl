@@ -35,16 +35,29 @@ public class StudentActivity extends ActionBarActivity {
 				Spinner spinner = (Spinner)findViewById(R.id.section);
 				section = spinner.getSelectedItem().toString();
 				roomNumber = ((EditText)findViewById(R.id.roomnumber)).getText().toString();
-				
-				sendSMS("9197978781", "Hi there RA. Your help is needed!\n" 
-						+ "\nName: " + name
-						+ "\nPhone: " + phoneNumber
-						+ "\nSection: " + section
-						+ "\nRoom Number: " + roomNumber
-						+ "\nMessage: " + message);
-				
-				Toast.makeText(getApplicationContext(), "SMS sent!",
-						   Toast.LENGTH_LONG).show();
+				if(name.trim().equals("")) {
+					Toast.makeText(getApplicationContext(), "Please Enter your name!",
+							   Toast.LENGTH_LONG).show();
+				} else if(phoneNumber.trim().equals("")) {
+					Toast.makeText(getApplicationContext(), "Please Enter your phone number!",
+							   Toast.LENGTH_LONG).show();
+				} else if(roomNumber.trim().equals("")) {
+					Toast.makeText(getApplicationContext(), "Please Enter your room number!",
+							   Toast.LENGTH_LONG).show();
+				} else if(message.trim().equals("")) {
+					Toast.makeText(getApplicationContext(), "Please Enter your message!",
+							   Toast.LENGTH_LONG).show();
+				} else {
+					sendSMS("9197978781", "Hi there RA. Your help is needed!\n" 
+							+ "\nName: " + name
+							+ "\nPhone: " + phoneNumber
+							+ "\nSection: " + section
+							+ "\nRoom Number: " + roomNumber
+							+ "\nMessage: " + message);
+					
+					Toast.makeText(getApplicationContext(), "Alert Sent! Your RA will get back to you soon!",
+							   Toast.LENGTH_LONG).show();
+				}
 			}
 			
 		});
