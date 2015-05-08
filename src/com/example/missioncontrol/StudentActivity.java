@@ -36,7 +36,7 @@ public class StudentActivity extends ActionBarActivity {
 						+ "\nName: " + name
 						+ "\nPhone: " + phoneNumber
 						+ "\nSection: " + section
-						+ "\nRoom Number " + roomNumber
+						+ "\nRoom Number: " + roomNumber
 						+ "\nMessage: " + message);
 				
 				Toast.makeText(getApplicationContext(), "SMS sent!",
