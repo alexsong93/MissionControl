@@ -10,7 +10,7 @@
         <item>Kilgo</item>
     </string-array>
         <string name="name">Name</string>
-        <string name="email">Email</string>
-        <string name="pw">"PW        "</string>
+        <string name="email">EMail :</string>
+        <string name="pw">PW     :</string>
 
 </resources>
