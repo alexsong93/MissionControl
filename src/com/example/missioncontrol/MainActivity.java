@@ -43,4 +43,10 @@ public class MainActivity extends ActionBarActivity {
 		Intent intent = new Intent(this, RALoginActivity.class);
 		startActivity(intent);
 	}
+	
+	public void openRABoard(View view) {
+		Intent intent = new Intent(this, RABoardActivity.class);
+		startActivity(intent);
+	}
+	
 }
