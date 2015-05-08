@@ -26,6 +26,7 @@
         <activity android:name="RAregisterActivity"></activity>
         <activity android:name="StudentActivity"></activity>
         <activity android:name="RALoginActivity"></activity>
+        <activity android:name="RAregisterActivity"></activity>
     </application>
 
 </manifest>
