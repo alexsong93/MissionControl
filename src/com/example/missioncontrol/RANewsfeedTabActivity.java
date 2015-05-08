@@ -9,9 +9,10 @@ public class RANewsfeedTabActivity extends Activity {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        TextView tv = new TextView(this);
-        tv.setTextSize(25);
-        tv.setText("RA NEWSFEED");
-        setContentView(tv);
+        setContentView(R.layout.activity_ranewsfeed);
+//        TextView tv = new TextView(this);
+//        tv.setTextSize(25);
+//        tv.setText("RA NEWSFEED");
+//        setContentView(tv);
     }
 }
