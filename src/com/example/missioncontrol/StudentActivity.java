@@ -1,8 +1,11 @@
 package com.example.missioncontrol;
 
+import java.util.List;
+
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +24,7 @@ public class StudentActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_student);
+		
 		Button btnSendSMS = (Button) findViewById(R.id.helpme);
 				
 		btnSendSMS.setOnClickListener(new View.OnClickListener() {
