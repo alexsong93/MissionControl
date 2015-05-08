@@ -25,17 +25,6 @@ public class RALoginActivity extends ActionBarActivity {
 		loginBtn = (Button) findViewById(R.id.button1);
 		signupBtn = (Button) findViewById(R.id.button2);
 		
-		loginBtn.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				if(v == loginBtn){
-					//Go to RA view
-				}
-				
-			}
-		});
-		
 		
 		
 		
@@ -44,6 +33,11 @@ public class RALoginActivity extends ActionBarActivity {
 	
 	public void openSignupPage(View view) {
 		Intent intent = new Intent(this, RAregisterActivity.class);
+		startActivity(intent);
+	}
+	
+	public void openRABoard(View view) {
+		Intent intent = new Intent(this, RABoardActivity.class);
 		startActivity(intent);
 	}
 	
